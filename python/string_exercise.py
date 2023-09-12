@@ -1,5 +1,6 @@
 # Create a new variable, that is a text to normalize.
-value = 'tHis iz your homeWork, copy these Text to variable. You NEED TO normalize it fROM letter CASEs point oF ' \
+value = 'homEwork: ' \
+        'tHis iz your homeWork, copy these Text to variable. You NEED TO normalize it fROM letter CASEs point oF ' \
         'View. also, create one MORE senTENCE witH LAST WoRDS of each existING SENtence and add it to the END OF this ' \
         'Paragraph. it iZ misspeLLing here. fix “iZ” with correct “is”, but ONLY when it Iz a mistAKE. last iz TO ' \
         'calculate nuMber OF Whitespace characteRS in this Text. caREFULL, not only Spaces, but ALL whitespaces. I ' \
@@ -31,7 +32,7 @@ string_two = '. '.join(string_capitalize)
 string_two = string_two.replace(' iz ', ' is ')
 
 # Join both strings together to create final text.
-text = string_two + ' ' + string_one
+text = string_two + string_one
 
 
 # Method to count spaces in the text.
@@ -41,6 +42,7 @@ def check_space(string):
         if i.isspace():
             count += 1
     return count
+
 
 # Print final text and number of spaces.
 print(text)
